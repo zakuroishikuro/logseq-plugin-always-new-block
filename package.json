@@ -1,0 +1,13 @@
+{
+  "name": "logseq-plugin-always-new-block",
+  "version": "0.0.1",
+  "description": "It simply adds a function to always create a new block.",
+  "author": "zakuroishikuro",
+  "license": "MIT",
+  "logseq": {
+    "title": "always-new-block",
+    "icon": "./icon.jpg",
+    "main": "index.js",
+    "id": "always-new-block"
+  }
+}
