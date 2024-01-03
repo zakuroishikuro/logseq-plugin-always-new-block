@@ -1,5 +1,7 @@
 # always-new-block
 
+**No plans for release due to lack of knowledge and time**
+
 ## Overview
 
 This Logseq plugin provides a set of functionalities to efficiently manipulate blocks for the user. It enables various actions such as inserting new blocks, creating sibling blocks, and creating the first or last child blocks within a page.
