@@ -12,17 +12,21 @@ That's why I created this plugin. The "Create New Block" function is designed to
 
 ## Features
 
-*   **createNewBlock**:
-    * Adds a new block under the current block.
-    * Alternative for Enter Key Function.
-*   **createFirstSibling / createLastSibling**:
-    * Creates a first or last sibling block relative to the current block.
-*   **createNextSibling / createPreviousSibling**:
-    * Creates a sibling block either before or after the current block.
-*   **createFirstChildInCurrentBlock / createLastChildInCurrentBlock**:
-    * Creates the first or last child block within the current block.
-*   **createFirstChildInCurrentPage / createLastChildInCurrentPage**:
-    * Creates the first or last child block in the current page.
+*   **createNewBlock**
+    *   **Summary**: Inserts a new block based on the current block's state. **Alternative for Enter Key Function.**
+    *   **Details**: If the current block is not collapsed and has children, it inserts a new child block at the beginning. Otherwise, it inserts a new sibling block after the current block.
+*   **createFirstSibling / createLastSibling**
+    *   **Summary**: Inserts a new sibling block at the beginning or end of the current block's parent.
+    *   **Details**: If the current block itself is a page, it inserts the new block as the first or last child of the page.
+*   **createNextSibling / createPreviousSibling**
+    *   **Summary**: Inserts a new sibling block either after or before the current block.
+    *   **Details**: If the current block is zoomed in and selected, it inserts the new block as a child.
+*   **createFirstChildInCurrentBlock / createLastChildInCurrentBlock**
+    *   **Summary**: Inserts a new child block at either the beginning or end of the current block.
+    *   **Details**: If the current block is collapsed, it will be expanded first before inserting the new child block.
+*   **createFirstChildInCurrentPage / createLastChildInCurrentPage**
+    *   **Summary**: Inserts a new block as the first or last child in the current page.
+    *   **Details**: Depending on whether the current page is a page or a block, it appropriately inserts a new block at the designated location.
 
 ## Usage
 
