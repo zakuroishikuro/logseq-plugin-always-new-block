@@ -106,8 +106,7 @@ async function createLastChildInCurrentPage({ _uuid }, blockContent = "") {
 
 
 function main() {
-  logseq.App.registerCommandPalette({ key: 'createNewBlock', label: 'Create New Block', keybinding: { mode: "editing", binding: "alt+enter" } }, createFirstChildInCurrentBlock);
-  //logseq.App.registerCommandPalette({ key: 'createNewBlock', label: 'Create New Block', keybinding: { mode: "editing", binding: "alt+enter" } }, createNewBlock);
+  logseq.App.registerCommandPalette({ key: 'createNewBlock', label: 'Create New Block', keybinding: { mode: "editing", binding: "alt+enter" } }, createNewBlock);
 
   logseq.App.registerCommandPalette({ key: 'createFirstSibling', label: 'Create First Sibling', keybinding: { mode: "editing" } }, createFirstSibling);
   logseq.App.registerCommandPalette({ key: 'createLastSibling', label: 'Create Last Sibling', keybinding: { mode: "editing" } }, createLastSibling);
